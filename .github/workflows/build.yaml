@@ -80,7 +80,7 @@ jobs:
 
       - name: Extract image metadata
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           # v8.5.12 -> 8.5.12, 8.5, latest ; push to main / schedule -> edge
